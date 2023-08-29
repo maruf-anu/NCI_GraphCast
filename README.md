@@ -65,6 +65,6 @@ git clone https://github.com/maruf-anu/NCI_GraphCast.git
 Open the ARE JupyterLab. <br>
 Load and run the NCI graphcast notebook from download location: /path/to/dir/NCI_GraphCast/graphcast-02.ipynb
 
-Now, you can develop and run your own code using this enviroment. 
+Now, you can develop or run your own code for train and inference using this enviroment. 
 
 
