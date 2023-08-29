@@ -1,0 +1,35 @@
+name: null
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - cudatoolkit=11.8.0
+  - xarray
+  - dask
+  - netCDF4
+  - bottleneck
+  - jupyterlab
+  - ipywidgets
+  - pip
+  - pip:
+    - nvidia-cudnn-cu11==8.6.0.163
+    - tensorflow==2.13.* 
+    - tensorrt
+    - jax[cuda11_local] -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+    - chex
+    - dm-haiku 
+    - git+https://github.com/deepmind/jaxline
+    - jraph
+    - scipy
+    - dm-tree 
+    - trimesh[all] 
+    - https://github.com/deepmind/graphcast/archive/master.zip
+    - google-cloud-speech 
+    - google-cloud-storage 
+    - google-cloud-bigquery 
+    - google-cloud-texttospeech 
+    - google-cloud-aiplatform 
+    - google-cloud-domains
+
+
+
