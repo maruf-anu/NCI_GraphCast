@@ -1,6 +1,7 @@
 # NCI_GraphCast
 NCI deployment of DeepMind GraphCast
 
+Here are the steps to install and run the DeepMind GraphCast on Gadi.
 
 ## Install
 Step 1
@@ -11,7 +12,7 @@ conda create -p /path/to/nci_graphcast \
 ``` 
 Step 2
 ```bash
-conda activate /scratch/fp0/mah900/env/nci_graphcast
+conda activate /path/to/nci_graphcast
 pip install --upgrade pip
 ```
 
@@ -40,7 +41,7 @@ echo 'export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/:$CUDNN_PATH/lib:$LD_LIBRARY_PATH
 ## Launch on ARE
 
 Step 1 <br>
-goto https://are.nci.org.au/
+go to https://are.nci.org.au/
 
 Step 2 <br>
 Fill up the Jupyter form
@@ -57,9 +58,13 @@ Conda environment: </path/to/nci_graphcast>
 ```
 
 Step 3 <br>
+Go to your desired directory on Gadi and clone the repo
+```
+git clone https://github.com/maruf-anu/NCI_GraphCast.git
+```
 Open the ARE JupyterLab. <br>
-Load and run NCI graphcast notebook from: /scratch/fp0/mah900/NCI_GraphCast/graphcast-02.ipynb
+Load and run the NCI graphcast notebook from download location: /path/to/dir/NCI_GraphCast/graphcast-02.ipynb
 
-
+Now, you can develop and run your own code using this enviroment. 
 
 
