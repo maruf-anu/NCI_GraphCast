@@ -5,7 +5,7 @@ NCI deployment of DeepMind GraphCast
 ## Install
 Step 1
 ```bash
-conda create -p /scratch/fp0/mah900/env/nci_graphcast \
+conda create -p /path/to/nci_graphcast \
 	-c conda-forge python=3.10 cudatoolkit=11.8.0 \
 	xarray dask netCDF4 bottleneck jupyterlab ipywidgets 
 ``` 
@@ -35,5 +35,31 @@ echo 'CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn._
 echo 'export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/:$CUDNN_PATH/lib:$LD_LIBRARY_PATH' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 
 ```
+
+
+## Launch on ARE
+
+Step 1 <br>
+goto https://are.nci.org.au/
+
+Step 2 <br>
+Fill up the Jupyter form
+```
+Walltime (hours): <As required>
+Queue: gpuvolta
+Compute Size: 1gpu
+Project: <Your Project Code>
+Storage: gdata/wb00 + <All other file systems you need to access>
+
+Python or Conda virtual environment base: <your conda installation path>
+Conda environment: </path/to/nci_graphcast>
+
+```
+
+Step 3 <br>
+Open the ARE JupyterLab. <br>
+Load and run NCI graphcast notebook from: /scratch/fp0/mah900/NCI_GraphCast/graphcast-02.ipynb
+
+
 
 
